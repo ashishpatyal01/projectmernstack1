@@ -1,0 +1,89 @@
+
+.add {
+  padding: 50px ;
+  background: #ffffff;
+  border-radius: 12px;
+  max-width: 650px;
+  margin: 40px auto;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+   
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.add-img-upload {
+  align-items: center;
+  text-align: center;
+}
+
+.add-img-upload p {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.add-img-upload img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border: 2px dashed #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+}
+
+.add-img-upload img:hover {
+  border-color: #e74c3c;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #e74c3c;
+  box-shadow: 0 0 0 2px rgba(231, 76, 60, 0.1);
+}
+
+textarea {
+  resize: vertical;
+}
+
+.add-btn {
+  padding: 12px 20px;
+  border: none;
+  background-color: #e74c3c;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-btn:hover {
+  background-color: #c0392b;
+  transform: translateY(-1px);
+}
+.add-container {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 400px; /* Increase padding from left */
+}

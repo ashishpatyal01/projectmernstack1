@@ -1,0 +1,117 @@
+.my-order {
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.my-order h2 {
+  text-transform: capitalize;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.my-order-order {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background-color: #fff;
+  transition: transform 0.2s ease;
+}
+
+.my-order-order:hover {
+  transform: scale(1.01);
+}
+
+.my-order-order img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-right: 20px;
+}
+
+.my-order-order p {
+  margin: 5px 10px;
+  font-size: 16px;
+  color: #555;
+  flex: 1 1 200px;
+}
+
+.my-order-order p span {
+  color: green;
+  font-size: 18px;
+  margin-right: 6px;
+}
+
+.my-order-order b {
+  text-transform: capitalize;
+  color: #333;
+}
+
+.my-order-order button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.my-order-order button:hover {
+  background-color: #0056b3;
+}
+
+/* --- Responsive Media Queries --- */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .my-order-order {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+  }
+
+  .my-order-order p {
+    flex: 1 1 100%;
+    margin: 5px 0;
+  }
+
+  .my-order-order img {
+    margin-bottom: 10px;
+  }
+
+  .my-order-order button {
+    align-self: flex-start;
+  }
+}
+
+/* Mobile phones (480px and below) */
+@media (max-width: 480px) {
+  .my-order h2 {
+    font-size: 22px;
+  }
+
+  .my-order-order {
+    padding: 12px;
+  }
+
+  .my-order-order p {
+    font-size: 14px;
+  }
+
+  .my-order-order button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}

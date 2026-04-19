@@ -1,0 +1,109 @@
+.list {
+  padding: 30px;
+  padding-top: 30px; /* Added extra top padding */
+  background-color: #ffffff;
+  border-radius: 12px;
+  max-width: 1100px;
+  margin: 30px 0 40px 300px; /* Align to right */
+  box-shadow: 0 12px 30px rgba(226, 41, 41, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Remaining styles unchanged */
+.list > p {
+  font-size: 26px;
+  font-weight: 700;
+  color: #f04f24;
+  text-align: center;
+}
+
+.list-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.list-table-format-tittle,
+.list-table-formet {
+  display: grid;
+  grid-template-columns: 120px 2fr 1.5fr 1fr 100px;
+  align-items: center;
+  padding: 14px 20px;
+  border-bottom: 1px solid #eee;
+  min-width: 700px;
+}
+
+.list-table-format-tittle {
+  background-color: #f04f24;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px 8px 0 0;
+}
+
+.list-table-formet:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.list-table-formet:hover {
+  background-color: #fdf1ec;
+  transition: 0.3s ease;
+}
+
+.list-table-formet img {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.list-table-formet p {
+  margin: 0;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.list-table-formet p:last-child {
+  text-align: center;
+  font-weight: bold;
+  color: #f04f24;
+  cursor: pointer;
+  font-size: 18px;
+}
+/* 🔻 Responsive: For 230px to 768px screen width */
+@media (max-width: 230px) {
+  .list {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .list-table-format-tittle,
+  .list-table-formet {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+    min-width: unset;
+  }
+
+  .list-table-formet img {
+    grid-column: span 2;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .list-table-formet p {
+    font-size: 14px;
+  }
+
+  .list-table-formet p:last-child {
+    grid-column: span 2;
+  }
+
+  .list-table-format-tittle {
+    display: none;
+  }
+}
